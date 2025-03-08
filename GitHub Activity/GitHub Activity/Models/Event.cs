@@ -654,10 +654,10 @@ public class PullRequest
     public DateTime UpdatedAt { get; set; }
 
     [JsonProperty("closed_at")]
-    public DateTime ClosedAt { get; set; }
+    public DateTime? ClosedAt { get; set; }
 
     [JsonProperty("merged_at")]
-    public DateTime MergedAt { get; set; }
+    public DateTime? MergedAt { get; set; }
 
     [JsonProperty("merge_commit_sha")]
     public string MergeCommitSha { get; set; }
